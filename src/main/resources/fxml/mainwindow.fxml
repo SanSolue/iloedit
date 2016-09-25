@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright (c) 2016 by Samith Sandanayake.
+  ~
+  ~ This software is licensed under Apache License 2
+  -->
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="628.0" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="15.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="newButton" mnemonicParsing="false" onAction="#newAction" text="New" />
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveAction" text="Save" />
+            <Button fx:id="saveAsButton" mnemonicParsing="false" onAction="#saveAsAction" text="Save As" />
+            <Button fx:id="previewButton" mnemonicParsing="false" onAction="#previewAction" text="Preview" />
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#settingsAction" text="Settings" />
+        </items>
+      </ToolBar>
+   </top>
+   <left>
+      <AnchorPane prefHeight="425.0" prefWidth="156.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="chapterTreeSearch" layoutX="7.0" layoutY="7.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+            <TreeView fx:id="chapterTree" layoutX="7.0" layoutY="30.0" prefHeight="393.0" prefWidth="152.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="30.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <TextArea fx:id="editor" prefHeight="424.0" prefWidth="326.0" BorderPane.alignment="CENTER" />
+   </center>
+</fx:root>
